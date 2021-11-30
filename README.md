@@ -2,8 +2,8 @@
 Библеотека для тестирования с++ кода.
 
 ## Поддерживая платформа
-*Win10 
-*С++ 17 и выше
+Win10 
+С++ 17 и выше
 
 ## Примеры
 ```c++
@@ -84,14 +84,6 @@ assert.is("test - 7", 1, 1);
   search 	- Элемент который ищется в массиве.  
 */
 assert.is_contein("test - 7", 1, 1);
-
-assert.add_block("Test Block 1", TestingBlock{
-  assert->equal("test - 8", 1, 1);
-  assert->equal("test - 9", 1, 0);
-  assert->equal("test - 10", 1, 0);
-
-  assert->add_block_comment("Check");
-});
 
 //Создаем подблок для тестирования
 assert.add_block("Test Block 1", TestingBlock{
